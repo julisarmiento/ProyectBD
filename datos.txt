@@ -1,0 +1,4 @@
+org.postgresql.Driver
+localhost:5432/proyecto
+postgres
+juliana
