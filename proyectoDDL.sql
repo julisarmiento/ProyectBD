@@ -122,7 +122,7 @@ CREATE TABLE auditoria_donante(
 CREATE OR REPLACE FUNCTION funcion_auditoria_donante()
 RETURNS trigger AS $$
 BEGIN
-    INSERT INTO auditoria_donante(dni, usuario)
+    INSERT INTO ciudad.auditoria_donante(dni, usuario)
     VALUES (OLD.dni, current_user);
     RETURN OLD;
 END;
